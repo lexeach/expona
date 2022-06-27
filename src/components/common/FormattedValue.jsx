@@ -29,14 +29,14 @@ class FormattedValue extends React.Component {
             case 'address':
                 return (
                     <>
-                        <Blockies seed={this.props.value.toLowerCase()} size={8} scale={2} />
+                        <Blockies seed={this.props.value.toLowerCase()} size={2} scale={2} />
                         {this.props.value.toString()}
                     </>
                 );
             case 'uint256':
                 return (
                     <>
-                        {this.props.mode === "e18"
+                        {this.props.mode === "e2"
                             
                             ? ((this.props.value))
                             : ((this.props.value))
@@ -55,7 +55,7 @@ class FormattedValue extends React.Component {
 
 FormattedValue.propTypes = {
     type: PropTypes.string,
-    mode: PropTypes.oneOf(['raw', 'e18']),
+    mode: PropTypes.oneOf(['raw', 'e2']),
 };
 
 export default FormattedValue;
