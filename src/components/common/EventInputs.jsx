@@ -28,15 +28,15 @@ const Item = props => {
                     onChange={(checked) => props.onActivate && props.onActivate(checked)}
                 />
             </span>
-            {/* <span>
+            <span>
                 <Button 
                     size='small' 
                     onClick={props.onAddValue}
                 >
                     <Icon type='plus' />
                 </Button>
-            </span> */}
-            {/* <span>
+            </span>
+            <span>
                 <Button 
                     size='small' 
                     disabled={values.length <= 1} 
@@ -44,7 +44,7 @@ const Item = props => {
                 >
                     <Icon type='minus' />
                 </Button>
-            </span> */}
+            </span>
             {values.map((item, index) => (
                 <CustomInput
                     size='small'
